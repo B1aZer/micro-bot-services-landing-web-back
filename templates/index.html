@@ -1,1 +1,73 @@
-<p>Hello, World!</p>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="static/assets/img/logo.png">
+    <link rel="stylesheet" href="static/assets/css/starter.css">
+    <title>GooDee Payment Processor</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="static/assets/img/logo.png" alt="" width="100" height="100">
+            <h2>Payment processor</h2>
+            <p class="lead">Choose desired number of coins and pay with Ethereum.<br />
+                After transaction is complete they will be transferred to your discord account.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-sm-12">
+                <form class="needs-validation" novalidate>
+                    <div class="form-group mb-5">
+                        <label for="formControlRange" class="float-left">100</label>
+                        <label for="formControlRange" class="float-right">10000</label>
+                        <input type="range" class="form-control-range" id="formControlRange" min="100" max="10000"
+                            step="100" value="100">
+                    </div>
+
+                    <div class="form-group row mb-4">
+                        <label for="inputCoins" class="col-sm-2 col-form-label">You'll receive</label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><img src="static/assets/img/coin.svg"
+                                            alt="Ethereum-logo" height="15" width="15"></span>
+                                </div>
+                                <input type="text" class="form-control" id="inputCoins" value="100">
+                                <div class="invalid-feedback">
+                                    Please enter valid value for coins amount.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-5">
+                        <label for="inputEthereum" class="col-sm-2 col-form-label">You'll pay</label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><img src="static/assets/img/ethereum-eth-logo.svg"
+                                            alt="Ethereum-logo" height="15" width="15"></span>
+                                </div>
+                                <input type="text" class="form-control" id="inputEthereum" value="0.033">
+                                <div class="invalid-feedback">
+                                    Please enter valid value for Ethereum amount.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="module" src="static/assets/js/index.js"></script>
+
+</body>
+
+</html>
